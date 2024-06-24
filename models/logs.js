@@ -48,25 +48,25 @@ module.exports = [
       mistakesWereMadeToday: true,
       daysSinceLastCrisis: 0,
     },
-    // {
-    //   captainName: "captain1",
-    //   title: "cap1",
-    //   post: "capn1",
-    //   mistakesWereMadeToday: false,
-    //   daysSinceLastCrisis: 4,
-    // },
-    // {
-    //         captainName: "captain2",
-    //         title: "cap2",
-    //         post: "capn2",
-    //         mistakesWereMadeToday: false,
-    //         daysSinceLastCrisis: 5,
-    // },
-    // {
-    //   captainName: "captain3",
-    //   title: "cap3",
-    //   post: "capn3",
-    //   mistakesWereMadeToday: false,
-    //   daysSinceLastCrisis: 6,
-    // }
+    {
+      captainName: "captain1",
+      title: "cap1",
+      post: "capn1",
+      mistakesWereMadeToday: false,
+      daysSinceLastCrisis: 4,
+    },
+    {
+            captainName: "captain2",
+            title: "cap2",
+            post: "capn2",
+            mistakesWereMadeToday: false,
+            daysSinceLastCrisis: 5,
+    },
+    {
+      captainName: "captain3",
+      title: "cap3",
+      post: "capn3",
+      mistakesWereMadeToday: false,
+      daysSinceLastCrisis: 6,
+    }
   ]; 
