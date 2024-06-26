@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 // create route to logs controller
 app.use('/logs', logsController);
 
+app.get('/logs/404', (req, res) => {
+    res.status(404).json({ error: "404 Log not found"})
+})
+
 // handle errors when invalid/nonexistent route requested
 app.get('*', (req, res) => {
     res.status(404).json({ error: "404 page not found" })

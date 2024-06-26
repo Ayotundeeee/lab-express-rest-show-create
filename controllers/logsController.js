@@ -14,7 +14,7 @@ logs.get('/:arrayIndex', (req, res) => {
     if(logsArray[arrayIndex]){
         res.status(200).json(logsArray[arrayIndex]);
     } else {
-        res.status(404).json({ error: "404 Log not found" });
+        res.redirect('/logs/404');
     }
 })
 
@@ -31,7 +31,7 @@ logs.delete('/:arrayIndex', (req, res) => {
         removedLog = logsArray.splice(arrayIndex, 1);
         res.status(200).json(removedLog);
     } else {
-        res.status(404).json({error: "404 Log not found"})
+        res.redirect('/logs/404');
     }
 })
 
@@ -42,5 +42,7 @@ logs.put('/:arrayIndex', (req, res) => {
     res.status(200).json(logsArray[arrayIndex]);
     
 })
+
+
 
 module.exports = logs;
